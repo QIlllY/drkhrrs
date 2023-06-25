@@ -1,0 +1,603 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  width: 50%;
+  background-color: rgba(300, 300, 300, 0.9);
+  text-align: center;
+}
+
+
+
+button[type="submit"] {
+  border-radius: 30px;
+  padding: 10px 20px;
+  background-color: #8B0000;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+button[type="submit"]:hover {
+  background-color: #7A0000;
+}
+
+button[type="submit"]:active {
+  background-color: #660000;
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.a li a {
+  display: block;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  background-: rgba(163, 91, 2, 0.6);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 30%;
+}
+
+.a li a:hover {
+  background-color: darkred;
+}
+
+.a {
+    text-align: center;
+    overflow: hidden;
+    list-style: none; /* убираем точки */
+    display: flex; /* выравниваем по горизонтали */
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px black;
+    color: black;
+    margin: 0;
+}
+
+.li {
+  margin: 0 10px;
+  font-size: 30px;
+}
+
+.footer {
+  width: 100%;
+  background: rgba(255, 255, 255, 0);
+  color: #fff;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 300px;
+}
+
+.footer p {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.footer .button-container {
+  margin: 20px 0;
+}
+
+.footer .button-container button {
+  margin: 0 5px;
+}
+
+.footer .separator {
+  width: 60%;
+  height: 1px;
+  background-color: white;
+  margin: 10px 0;
+  display: flex;
+}
+
+.footicons img{
+  width: 35%;
+  height: auto;
+
+}
+
+.btn {
+  padding: 10px 20px;
+  margin-right: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  background-: rgba(163, 91, 2, 0.6);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: darkred;
+}
+
+.s {
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px white;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+body {
+  background: linear-gradient(black, rgb(35, 0, 0), black);
+  font-family: 'Anton', sans-serif;
+}
+
+#vanta-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.header-container {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  align-items: center;
+  position: static;
+  left: 0;
+  right: 0;
+  font-family: 'Anton', sans-serif;
+}
+
+.header-container > .a {
+  flex: 1 0 10rem
+}
+
+main{
+  color: white;
+  font-family: 'Anton', sans-serif;
+  float: center;
+  background-color: rgba(0, 0, 0, 0);
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo {
+  margin-top: 70px;
+  position: relative;
+  opacity: 0;
+  transition: opacity 2s ease-in-out;
+}
+
+.logo img:hover  {
+  transform: scale(1.2);
+}
+
+.logo img{
+  width: 40%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  transition: all 0.2s ease-in-out;
+}
+
+
+.logo.show {
+  opacity: 0.8; /* задаем полную прозрачность */
+}
+
+.A{
+  color: rgba(0, 255, 255, 0.1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.hero {
+  margin-top: 200px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  font-size: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.about {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+.shop{
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.shop:hover{
+  transform: scale(1.1);
+}
+
+.scroll-button2 {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 30%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.scroll-button2:hover {
+  background-color: darkred
+}
+
+.scroll-button2 img {
+  width: 32px;
+  height: auto;
+  transform: rotate(270deg);
+}
+
+.scroll-button2.show {
+  display: flex;
+}
+
+.hhh{
+  text-align: center;
+  font-size: 30px;
+  transition: opacity 0.3s ease-in;
+}
+
+.text{
+  font-size: 25px;
+  text-align: justify;
+  transition: opacity 0.3s ease-in;
+}
+
+.gms {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+}
+
+.screen {
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  margin-top: 50px;
+}
+
+.screen img {
+  width: 100%; /* Изображение будет растянуто по ширине блока */
+  height: 20%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 1%;
+}
+
+.menu {
+  position: absolute;
+  top: 1%;
+  left: 0;
+  display: none;
+  background-color: rgba(255, 0, 0, 0.0);
+  padding: 10px;
+  transition: top 0.5s ease, opacity 0.3s ease;
+}
+
+.menu img{
+    width: 40%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.0);
+}
+
+
+.silenthill {
+ font-size: 20px;
+ text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.amnesia {
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  margin-top: 50px;
+}
+
+.amnesia img {
+  width: 100%; /* Изображение будет растянуто по ширине блока */
+  height: 20%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 1%;
+}
+
+.menu2 {
+  position: absolute;
+  top: 1%;
+  left: 0;
+  display: none;
+  background-color: rgba(255, 0, 0, 0.0);
+  padding: 10px;
+  transition: top 0.5s ease, opacity 0.3s ease;
+}
+
+.menu2 img{
+    width: 40%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.0);
+}
+
+.re4 {
+  position: relative;
+  display: flex;
+  width: 80%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  margin-top: 50px;
+}
+
+.re4 img {
+  width: 100%; /* Изображение будет растянуто по ширине блока */
+  height: 20%;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+  border-radius: 1%;
+}
+
+.menu3 {
+  position: absolute;
+  top: 1%;
+  left: 0;
+  display: none;
+  background-color: rgba(255, 0, 0, 0.0);
+  padding: 10px;
+  transition: top 0.5s ease, opacity 0.3s ease;
+}
+
+.menu3 img{
+    width: 40%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.0);
+}
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #333;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 912px) {
+  /* Стили для устройств с шириной экрана до 768 пикселей */
+  /* Примеры изменений стилей */
+  .header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+  .nav-link {
+    padding: 5px 10px;
+  }
+  .s {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px white;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.a li a {
+  display: block;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0);
+  background-: rgba(163, 91, 2, 0.6);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  border-radius: 30%;
+}
+
+.a li a:hover {
+  background-color: darkred;
+}
+
+.a {
+    text-align: center;
+    overflow: hidden;
+    list-style: none; /* убираем точки */
+    display: flex; /* выравниваем по горизонтали */
+    padding: 10px;
+    left: 0;
+    bottom: 0;
+    letter-spacing: 2px;
+    text-shadow: 0 0 20px black;
+    color: black;
+    margin: 0;
+}
+
+.li {
+  margin: 0 10px;
+  font-size: 15px;
+}
+
+.logo img{
+  width: 80%;
+  height: auto;
+  display: flex;
+  margin: 0 auto;
+  transition: all 0.2s ease-in-out;
+}
+
+main{
+  color: white;
+  font-family: 'Anton', sans-serif;
+  float: center;
+  background-color: rgba(0, 0, 0, 0);
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.amnesia {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  margin-top: 50px;
+}
+
+.re4 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  margin-top: 50px;
+}
+
+.silenthill {
+ font-size: 10px;
+ text-shadow: 0 0 10px rgba(0, 0, 0, 1);
+}
+
+.screen {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  margin-top: 50px;
+}
+
+.menu2 img{
+    width: 30%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.0);
+}
+
+.text{
+  font-size: 14px;
+  text-align: justify;
+}
+
+.about {
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  width: 100%;
+  text-align: center;
+}
+
+.modal-content {
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid ;
+  width: 50%;
+  background-color: rgba(300,300,300, 0.6);
+}
+
+}
